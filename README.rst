@@ -1,3 +1,21 @@
+My Notes
+======
+i2c enable for Raspberry Pi 1B
+
+Check whether i2c is enabled,
+[code]sudo raspi-config nonint get_i2c[/code]
+
+This command will return:
+
+    1 if the port is disabled
+    0 if the port is enabled
+
+Enable by
+[code]sudo raspi-config nonint do_i2c 0[/code]
+
+Disable
+[code]sudo raspi-config nonint do_i2c 1[/code]
+
 Mycodo
 ======
 
